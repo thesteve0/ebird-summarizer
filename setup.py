@@ -3,7 +3,6 @@ from setuptools import setup
 setup(
     name='ebird-count-scripts',
     version='0.1',
-    packages=[''],
     url='',
     license='Apache',
     author='steve pousty',
