@@ -1,0 +1,38 @@
+= ebird-count-scripts
+
+Utility stuff I have put together to make the Xmas bird count tabulation easier or better or faster.
+Right now I just have a script that downloads a lists of ebird IDS and tabulates them.
+
+== Instructions:
+
+=== Prerequisites
+
+* This script was built with Python 3.9. It should work with any version of Python 3, but I can't guarantee it.
+* You need to have the ability to install libraries from PyPy
+* You can run something at the command line
+* You have an eBird[https://ebird.org/home] account and know your eBird API key. If you don't have one yet, you can
+sign up for it on the eBird API site[https://ebird.org/api/keygen]
+
+=== Running the script
+
+1. In the directory where you extracted the files, there will be a file named main.py. Open this in your favorite text editor
+and replace "PUT YOUR EBIRD API KEY HERE" with your API key from above. The API key must be enclosed in quotes.
+2. Save the file - DO NOT MAKE THIS FILE PUBLICLY ACCESSIBLE, like checking it into GitHub.
+3. Use your favorite text editor to also edit survey_lists.txt The format for this file is one survey per line and you
+just put in the S# for the survey. It is currently filled in with the eBird lists for my Christmas bird count section,
+Santa Cruz, CA, Section 5
+4. Save the file. There is no risk in sharing the file since the program has only read access to public ebird lists.
+5. Open a terminal/console/command line in the directory where you extracted this repo. To check that you have python
+    installed please type the following command and hit enter:
+
+        python -V
++
+on some linux distributions you need to do
+
+         python3 -V
++
+This command should return a single line showing you the Python version you have installed.
++
+If you don't see the version number then something is wrong with you python installation.
+
+6. Now, we need to install one library dependency. Installing dependencies in Python is a whole topic on its own.
