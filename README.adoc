@@ -35,4 +35,22 @@ This command should return a single line showing you the Python version you have
 +
 If you don't see the version number then something is wrong with you python installation.
 
-6. Now, we need to install one library dependency. Installing dependencies in Python is a whole topic on its own.
+6. Now, we need to install one library dependency. Installing dependencies in Python is a whole topic on its own and I am
+not an expert in any way shape or form. I made a dependencies.txt, even though I know it's a deprecated pattern.
+Your Python environment needs to include the https://pypi.org/project/ebird-api/[ebirds-api]. The instructions on that page
+tell you how to install the package using pip.
++
+I also made a setup.py but I am not sure I got it correct. Pull requests appreciated.
+
+7. With the dependency installed and the survey_lists.txt filled out we are all set. Here is the command to run the eBird
+survey summarization
+
+    python main.py
++
+    python3 main.py
++
+8. When it's finished there will be two files in the directory.
+    a. *section_metadata.csv* which contains the miles traveled and the time spent on all the lists
+    b. *section_counts.csv* which contains the common name, the ABA 6 letter name, and the number of times that species was seen.
+
+I hope you find this helpful and I always welcome discussion or pull requests.
